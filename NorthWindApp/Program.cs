@@ -29,7 +29,5 @@ internal partial class Program
         Categories category = NorthWind.SingleCategory();
         table.AddRow(category.CategoryID.ToString(), category.CategoryName, category.Description, category.Picture.Size.ToString());
         AnsiConsole.Write(table);
-
-
     }
 }
