@@ -2,10 +2,10 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using BogusSeedingModelLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SeedingLibrary.Classes;
-using SeedingLibrary.Models;
+
 
 namespace SeedingLibrary.Data;
 
@@ -30,10 +30,6 @@ public partial class Context : DbContext
         modelBuilder.Entity<Customer>()
             .Property(entity => entity.Gender)
             .HasConversion(new EnumToStringConverter<Gender>());
-
-        //var customers = BogusOperations.CustomersListHasIdentifiers(50);
-        //modelBuilder.Entity<Customer>().HasData(customers);
-        //OnModelCreatingPartial(modelBuilder);
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

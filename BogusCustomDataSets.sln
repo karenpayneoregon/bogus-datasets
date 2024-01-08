@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedingLibrary", "SeedingLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedingFrontendApp", "SeedingFrontendApp\SeedingFrontendApp.csproj", "{A8C6EADB-4CCB-4F28-9739-9AB22368AD62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BogusSeedingModelLibrary", "BogusSeedingModelLibrary\BogusSeedingModelLibrary.csproj", "{016009D3-27B6-4F08-BDF5-A0499176C144}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{A8C6EADB-4CCB-4F28-9739-9AB22368AD62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8C6EADB-4CCB-4F28-9739-9AB22368AD62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8C6EADB-4CCB-4F28-9739-9AB22368AD62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{016009D3-27B6-4F08-BDF5-A0499176C144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016009D3-27B6-4F08-BDF5-A0499176C144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016009D3-27B6-4F08-BDF5-A0499176C144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016009D3-27B6-4F08-BDF5-A0499176C144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{810F1B83-60A8-4FE8-82B4-E476ED724CF4} = {AFF53698-E655-448D-AB28-F40438E123F9}
 		{A8C6EADB-4CCB-4F28-9739-9AB22368AD62} = {AFF53698-E655-448D-AB28-F40438E123F9}
+		{016009D3-27B6-4F08-BDF5-A0499176C144} = {AFF53698-E655-448D-AB28-F40438E123F9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBB74008-A545-4272-A499-5E0A7CEACCF5}
