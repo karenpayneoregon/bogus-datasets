@@ -9,11 +9,13 @@
 
 	<ItemGroup>
 	  <None Remove="readme.md" />
+	  <None Remove="Scripts\readme.md" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Content Include="assets\csharp.ico" />
 	  <Content Include="readme.md" />
+	  <Content Include="Scripts\readme.md" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -25,16 +27,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Bogus" Version="35.3.0" />
-		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="ObjectDumper.NET" Version="4.1.3" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Spectre.Console" Version="0.46.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SeedingLibrary\SeedingLibrary.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
