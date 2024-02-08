@@ -12,6 +12,7 @@ public class SpectreConsoleHelpers
             .RuleStyle(Style.Parse("silver")).Centered());
 
         Console.ReadLine();
+        Console.CursorVisible = true;
     }
 
     private static void Render(Rule rule)
