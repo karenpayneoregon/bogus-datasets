@@ -11,6 +11,7 @@ internal partial class Program
 {
     static void Main(string[] args)
     {
+        var customers = BogusOperations.CustomersListHasNoIdentifiers(500_000);
 
         Setup.CleanStart();
         Console.Clear();

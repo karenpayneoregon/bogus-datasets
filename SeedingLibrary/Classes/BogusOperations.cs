@@ -1,4 +1,5 @@
 ﻿using Bogus;
+using Bogus.DataSets;
 using BogusSeedingModelLibrary.Models;
 
 using static Bogus.Randomizer;
@@ -37,7 +38,8 @@ public class BogusOperations
         }
 
         var faker = new Faker<Customer>()
-            .RuleFor(c => c.FirstName, f => f.Name.FirstName())
+            .RuleFor(u => u.Gender, f => f.PickRandom<Gender>())
+            .RuleFor(c => c.FirstName, (f,u) => f.Name.FirstName((Name.Gender?)u.Gender))
             .RuleFor(c => c.LastName, f => f.Name.LastName())
             .RuleFor(c => c.BirthDay, f => f.Person.DateOfBirth)
             .RuleFor(e => e.Email, (f, e) => f.Internet.Email(e.FirstName, e.LastName))

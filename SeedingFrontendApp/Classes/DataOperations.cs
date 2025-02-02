@@ -31,7 +31,7 @@ internal class DataOperations
                 customer.LastName, 
                 customer.BirthDay.ToString(), 
                 customer.Email, 
-                customer.Gender.ToString());
+                customer.Gender.ToString()!);
         }
 
         AnsiConsole.Write(table);

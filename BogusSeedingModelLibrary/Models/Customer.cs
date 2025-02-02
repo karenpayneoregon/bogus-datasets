@@ -14,5 +14,5 @@ public partial class Customer
 
     public string Email { get; set; }
 
-    public Gender Gender { get; set; }
+    public Gender? Gender { get; set; }
 }
